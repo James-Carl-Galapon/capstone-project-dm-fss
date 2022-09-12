@@ -1,0 +1,128 @@
+
+.App{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: rgb(30, 30, 30);
+    color: #f6f6f6;
+    height: 100vh;  
+}
+
+@media only screen and (max-width: 1400px) {  
+    .App{
+        grid-template-columns: 1fr 4.5fr;
+    }
+
+}
+@media only screen and (max-width: 1300px) {  
+    .App{
+        grid-template-columns: 1fr 4fr;
+    }
+    .username-logout-box{
+        background-color: red;
+/*         width: 21% !important; */
+    }
+
+}
+
+@media only screen and (max-width: 1185px) {  
+    .title-subtitle-box > h1{
+        font-size: 22px !important;
+    }
+    .title-subtitle-box > p{
+        font-size: 9px  !important;
+    }
+}
+@media only screen and (max-width: 1032px){
+    .username-logout-box{
+        background-color: green;
+/*         width: 23% !important; */
+        color: white;
+    }
+    .title-subtitle-box > h1{
+        font-size: 20px !important;
+    }
+    .title-subtitle-box > p{
+        font-size: 7px !important;
+    }
+}
+
+.sidebar{
+    height: 100%;
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    width: 100%;
+/*     animation-name: initialAnimation;
+    animation-duration: 1s; */
+}
+
+/* @keyframes initialAnimation {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+} */
+
+.top-nav-bar{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.username-logout-box{
+    display: flex;
+/*     background-color: red; */
+    padding: 3px 8px;
+    flex-grow: 0.4;/*     width: 100%; */
+
+    color: white;
+    justify-content: space-between;
+    font-size: 15px;
+
+}
+.search-box{
+    flex-grow: 5;
+}
+.search-box > input[type="text"]{
+    height: 10px;
+    width: 30%;
+}
+
+.title-subtitle-box{
+    padding: 10px;
+    margin-top: 10px;
+}
+.title-subtitle-box > h1{
+    font-size: 25px;
+}
+.title-subtitle-box > p{
+    font-size: 12px;
+    color: rgb(111, 209, 255);
+    width: 90%;
+}
+
+.navlink-component{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    margin: 10px 0px;
+    color: rgb(246, 246, 246);
+}
+.navlink-component:hover{
+    background-color: rgba(255, 255, 255, 0.221);
+}
+.navlink-component-active{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    display: block;
+    margin: 10px 0px;
+    color: rgb(36, 36, 36);
+    background-color: rgb(111, 209, 255);
+}
+.navlink-tabs{
+    margin-top: 50px;
+}
