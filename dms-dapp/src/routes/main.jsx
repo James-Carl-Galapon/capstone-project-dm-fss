@@ -36,7 +36,7 @@ function Main({userInstance, userSession}) {
           <NavLink onClick={()=> setHomeActive(false)} className={({isActive})=> isActive ? "navlink-component-active" : "navlink-component" } to="Teams"> Favorite</NavLink>
           <NavLink onClick={()=> setHomeActive(false)} className={({isActive})=> isActive ? "navlink-component-active" : "navlink-component" } to="Teams"> Protected Documents</NavLink>
           <NavLink onClick={()=> setHomeActive(false)} className={({isActive})=> isActive ? "navlink-component-active" : "navlink-component" } to="Teams"> Teams</NavLink>
-          <NavLink onClick={()=> setHomeActive(false)} className={({isActive})=> isActive ? "navlink-component-active" : "navlink-component" } to="Teams"> Connect to a Pinning Service</NavLink>
+          <NavLink onClick={()=> setHomeActive(false)} className={({isActive})=> isActive ? "navlink-component-active" : "navlink-component" } to="Teams"> Connect To your Local Node</NavLink>
           
         </div> 
       </div>
@@ -55,7 +55,7 @@ function Main({userInstance, userSession}) {
             <button onClick={handleLogout}>Log out</button>
           </div>
         </div>
-        <div>
+        <div className="outlet-container">
           <Outlet />
         </div>
       </div>
