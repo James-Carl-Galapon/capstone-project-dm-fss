@@ -5,7 +5,9 @@
 /*     background-color: rgb(30, 30, 30);
  */    color: #f6f6f6;
     height: 100vh;
-    background-image: url('../../background.png');  
+    background-image: url('../../background.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
