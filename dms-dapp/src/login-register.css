@@ -6,7 +6,7 @@
     height: 100vh;
     display: flex;
     place-items: center;
-    color: rgb(211, 241, 255);
+    color: rgb(237, 249, 255);
     background-image: url('./background.png');
     background-size: cover;
     background-repeat: no-repeat;

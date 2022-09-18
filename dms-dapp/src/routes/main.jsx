@@ -42,12 +42,11 @@ function Main({userInstance, userSession}) {
       </div>
       <div className="right-component">
         <div className="top-nav-bar">
-          <div>
-            {/* Name of the current tab */}
-          </div>
           <div className="search-box">
-            <span>Search files: </span>
-            <input type="text" />
+            <div>
+              <span>Search files: </span>
+              <input type="text" />
+            </div>
             {/* Search */}
           </div>
           <div className="username-logout-box">
