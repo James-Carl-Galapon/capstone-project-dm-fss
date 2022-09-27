@@ -20,7 +20,7 @@ function Main({userInstance, userSession}) {
   function handleLogout(){
     userInstance.leave();
     userSession.isLoggedIn = false;
-    document.location.reload();
+    document.location.reload(); //reload to execute callback in useEffect
   }
 
   return (

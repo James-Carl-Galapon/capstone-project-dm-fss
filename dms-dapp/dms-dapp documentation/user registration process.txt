@@ -6,7 +6,3 @@
     NOTE that you might create a separate user.auth(...) for regular login.
 
 4. Log out after registration and go to login component
-
-admin1
-fhgj894GDFN3934k
-sampleemail@gmail.com
