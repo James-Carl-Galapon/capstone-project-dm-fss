@@ -51,7 +51,7 @@ function Main({userInstance, userSession}) {
           </div>
           <div className="username-logout-box">
             <h3>Hello {username}</h3>
-            <button onClick={handleLogout}>Log out</button>
+            <button className="logout-btn" onClick={handleLogout}>Log out</button>
           </div>
         </div>
         <div className="outlet-container">

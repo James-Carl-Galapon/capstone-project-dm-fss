@@ -17,6 +17,29 @@ function Home({userInstance}) {
       console.log(dataObj.CID_prop);
     }); */
   }, []);
+
+/*   async function DownloadHandle(cid){
+    let cid_temp = cid;
+    let localFilename;
+
+    await userInstance.get('fileObjectList').get(`${cid}`).on(data => {
+      localFilename = data.filenameProperty;
+    });
+
+    fetch(`https://${cid_temp}.ipfs.w3s.link/ipfs/${cid_temp}/${localFilename}`).then(res => {
+      let result = res.blob();
+      console.log(result);
+      return result;
+    }).then(res => {
+      const aElement = document.createElement('a');
+      aElement.setAttribute('download', `${localFilename}`);
+      const href = URL.createObjectURL(res);
+      aElement.href = href;
+      aElement.setAttribute('target', '_blank');
+      aElement.click();
+      URL.revokeObjectURL(href);
+    })
+  } */
   return (
     <div className="home-container">
       <h1>Home:</h1>
@@ -38,6 +61,28 @@ function Home({userInstance}) {
               <tr>
                 <td>{elem.filename}</td>
                 <td>{elem.cid}</td>
+                <td><button className="download-btn" onClick={async ()=>{
+                  let cid_temp = elem.cid;
+                  let localFilename;
+              
+                  await userInstance.get('fileObjectList').get(`${cid_temp}`).on(data => {
+                    localFilename = data.filenameProperty;
+                  });
+              
+                  fetch(`https://${cid_temp}.ipfs.w3s.link/ipfs/${cid_temp}/${localFilename}`).then(res => {
+                    let result = res.blob();
+                    console.log(result);
+                    return result;
+                  }).then(res => {
+                    const aElement = document.createElement('a');
+                    aElement.setAttribute('download', `${localFilename}`);
+                    const href = URL.createObjectURL(res);
+                    aElement.href = href;
+                    aElement.setAttribute('target', '_blank');
+                    aElement.click();
+                    URL.revokeObjectURL(href);
+                  })
+                }}>Download File</button></td>
               </tr>
             )}
           </tbody>

@@ -35,9 +35,8 @@
     justify-content: center;
 }
 .upload-btn-class::file-selector-button{
-    padding: 10px 17px;
+    padding: 6px 17px;
     border-radius: 14px;
-    border: 1px solid black;
     font-size: 15px;
 }
 
