@@ -74,21 +74,19 @@
     display: flex;
     justify-content: space-between;
     padding: 7px;
+    height: 4%;
 }
 
 .username-logout-box{
     display: flex;
-/*     background-color: red; */
-    padding: 3px 8px;
     flex-grow: 0.4;/*     width: 100%; */
-
     color: white;
     justify-content: space-between;
-    font-size: 15px;
 
 }
 .search-box{
     flex-grow: 5;
+    height: 100%;
 }
 .search-box > div{
     width: 50%;
