@@ -50,7 +50,7 @@ function Home({userInstance}) {
       <p>NOTE: Metadata of each file is transmitted across GUN peers, so you may see duplicates of the same file listed below.</p>
       <br></br>
         <table className="table-container">
-          <thead>
+          <thead className="table-row-container">
             <tr>
               <th>Name</th>
               <th>Content Identifier (CID)</th>

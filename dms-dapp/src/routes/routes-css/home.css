@@ -9,6 +9,15 @@
     padding: 5px;
     border-radius: 5px;
     border: 0.5px solid white;
+    border-collapse: collapse;
+}
+
+.table-row-container {
+    border: 1px solid white;
+}
+
+.table-row-container > tr > th{
+    padding: 10px;
 }
 
 .table-container td{
